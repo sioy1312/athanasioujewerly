@@ -1,150 +1,273 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="el">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Athanasiou Jewelry — timeless jewelry with a modern Greek spirit.">
+
+  <meta name="description"
+        content="Athanas­iou Jewelry — Greek jewelry inspired by timeless form, balance and the spirit of Athens.">
+
   <title>Athanasiou Jewelry</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
-<header class="site-header">
-  <a href="#top" class="logo">
-    <span class="logo-symbol">Α</span>
-    <span>
-      ATHANASIOU
-      <small>JEWELRY</small>
-    </span>
-  </a>
+  <header class="site-header">
+    <div class="container header-inner">
 
-  <nav>
-    <a href="#collection">Collection</a>
-    <a href="#story">Our Story</a>
-    <a href="#contact">Contact</a>
-  </nav>
-</header>
+      <a href="#top" class="logo">
+        <span class="logo-main">ATHANASIOU</span>
+        <span class="logo-sub">JEWELRY</span>
+      </a>
 
-<main id="top">
+      <nav class="main-nav">
+        <a href="#collection" data-el="Συλλογή" data-en="Collection">Συλλογή</a>
+        <a href="#story" data-el="Η ιστορία μας" data-en="Our Story">Η ιστορία μας</a>
+        <a href="#contact" data-el="Επικοινωνία" data-en="Contact">Επικοινωνία</a>
+      </nav>
 
-  <section class="hero">
-    <p class="eyebrow">ATHANASIOU JEWELRY · ATHENS</p>
-
-    <h1>
-      Timeless form.<br>
-      <em>Modern spirit.</em>
-    </h1>
-
-    <p class="intro">
-      A contemporary jewelry house inspired by the elegance,
-      balance and enduring beauty of Greek design.
-    </p>
-
-    <a href="#collection" class="discover">
-      Discover the collection →
-    </a>
-  </section>
-
-  <section id="collection" class="collection">
-
-    <div class="section-title">
-      <p class="eyebrow">THE COLLECTION</p>
-      <h2>Objects of enduring beauty.</h2>
-    </div>
-
-    <div class="collection-grid">
-
-      <div class="collection-item">
-        <span>01</span>
-        <h3>Necklaces</h3>
-        <p>Clean lines and distinctive details.</p>
-      </div>
-
-      <div class="collection-item">
-        <span>02</span>
-        <h3>Bracelets</h3>
-        <p>Elegant pieces for everyday expression.</p>
-      </div>
-
-      <div class="collection-item">
-        <span>03</span>
-        <h3>Earrings</h3>
-        <p>Refined silhouettes with character.</p>
-      </div>
-
-      <div class="collection-item">
-        <span>04</span>
-        <h3>Rings</h3>
-        <p>Minimal forms made to last.</p>
-      </div>
+      <button class="language-switch" id="languageToggle" type="button">
+        <span class="lang-el active">GR</span>
+        <span class="lang-divider">/</span>
+        <span class="lang-en">EN</span>
+      </button>
 
     </div>
-  </section>
+  </header>
 
-  <section id="story" class="story">
+  <main id="top">
 
-    <div class="greek-symbol">
-      Α<br>
-      Θ<br>
-      Η<br>
-      Ν<br>
-      Α
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-pattern"></div>
+
+      <div class="container hero-content">
+
+        <p class="eyebrow"
+           data-el="ATHANASIOU JEWELRY · ATHENS"
+           data-en="ATHANASIOU JEWELRY · ATHENS">
+          ATHANASIOU JEWELRY · ATHENS
+        </p>
+
+        <h1>
+          <span data-el="Διαχρονική μορφή." data-en="Timeless form.">
+            Διαχρονική μορφή.
+          </span>
+          <br>
+          <em data-el="Σύγχρονο πνεύμα." data-en="Modern spirit.">
+            Σύγχρονο πνεύμα.
+          </em>
+        </h1>
+
+        <p class="hero-text"
+           data-el="Κοσμήματα εμπνευσμένα από την ελληνική αισθητική, την ισορροπία και τη δύναμη της απλότητας."
+           data-en="Jewelry inspired by Greek aesthetics, balance and the power of simplicity.">
+          Κοσμήματα εμπνευσμένα από την ελληνική αισθητική, την ισορροπία και τη δύναμη της απλότητας.
+        </p>
+
+        <a href="#collection" class="hero-button"
+           data-el="Ανακαλύψτε τη συλλογή"
+           data-en="Discover the collection">
+          Ανακαλύψτε τη συλλογή
+        </a>
+
+      </div>
+    </section>
+
+
+    <!-- COLLECTION -->
+    <section class="section collection" id="collection">
+
+      <div class="container">
+
+        <div class="section-heading">
+          <p class="eyebrow"
+             data-el="Η συλλογή"
+             data-en="The collection">
+            Η συλλογή
+          </p>
+
+          <h2 data-el="Καθαρή αισθητική. Ισχυρή παρουσία."
+              data-en="Clean aesthetics. Strong presence.">
+            Καθαρή αισθητική. Ισχυρή παρουσία.
+          </h2>
+
+          <p data-el="Μια επιλεγμένη σειρά κοσμημάτων με έμφαση στη λεπτομέρεια και στη διαχρονική φόρμα."
+             data-en="A curated selection of jewelry focused on detail and timeless form.">
+            Μια επιλεγμένη σειρά κοσμημάτων με έμφαση στη λεπτομέρεια και στη διαχρονική φόρμα.
+          </p>
+        </div>
+
+
+        <div class="collection-grid">
+
+          <article class="collection-card">
+            <div class="card-number">I</div>
+            <div class="card-symbol">◇</div>
+            <h3 data-el="Χρυσές δημιουργίες"
+                data-en="Gold creations">
+              Χρυσές δημιουργίες
+            </h3>
+            <p data-el="Κλασική κομψότητα με σύγχρονη γραμμή."
+               data-en="Classical elegance with a contemporary line.">
+              Κλασική κομψότητα με σύγχρονη γραμμή.
+            </p>
+          </article>
+
+
+          <article class="collection-card">
+            <div class="card-number">II</div>
+            <div class="card-symbol">◯</div>
+            <h3 data-el="Minimal σχέδια"
+                data-en="Minimal designs">
+              Minimal σχέδια
+            </h3>
+            <p data-el="Απλές φόρμες σχεδιασμένες για καθημερινή κομψότητα."
+               data-en="Simple forms designed for everyday elegance.">
+              Απλές φόρμες σχεδιασμένες για καθημερινή κομψότητα.
+            </p>
+          </article>
+
+
+          <article class="collection-card">
+            <div class="card-number">III</div>
+            <div class="card-symbol">△</div>
+            <h3 data-el="Ελληνικό πνεύμα"
+                data-en="Greek spirit">
+              Ελληνικό πνεύμα
+            </h3>
+            <p data-el="Γεωμετρία και ισορροπία εμπνευσμένες από την αρχαία Ελλάδα."
+               data-en="Geometry and balance inspired by ancient Greece.">
+              Γεωμετρία και ισορροπία εμπνευσμένες από την αρχαία Ελλάδα.
+            </p>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- STORY -->
+    <section class="section story" id="story">
+
+      <div class="container story-layout">
+
+        <div class="story-mark">
+          Α
+        </div>
+
+        <div class="story-content">
+
+          <p class="eyebrow"
+             data-el="Η ιστορία μας"
+             data-en="Our story">
+            Η ιστορία μας
+          </p>
+
+          <h2 data-el="Η ελληνική παράδοση συναντά το σύγχρονο design."
+              data-en="Greek heritage meets contemporary design.">
+            Η ελληνική παράδοση συναντά το σύγχρονο design.
+          </h2>
+
+          <p data-el="Το ATHANASIOU JEWELRY δημιουργήθηκε με στόχο να συνδυάσει την καθαρότητα της ελληνικής γεωμετρίας με μια σύγχρονη, διακριτική αισθητική."
+             data-en="ATHANASIOU JEWELRY was created to combine the purity of Greek geometry with a modern, refined aesthetic.">
+            Το ATHANASIOU JEWELRY δημιουργήθηκε με στόχο να συνδυάσει την καθαρότητα της ελληνικής γεωμετρίας με μια σύγχρονη, διακριτική αισθητική.
+          </p>
+
+          <p data-el="Κάθε δημιουργία σχεδιάζεται με έμφαση στις αναλογίες, στη λεπτομέρεια και στην ιδέα ότι ένα κόσμημα πρέπει να παραμένει όμορφο μέσα στον χρόνο."
+             data-en="Each creation is designed with attention to proportion, detail and the idea that jewelry should remain beautiful through time.">
+            Κάθε δημιουργία σχεδιάζεται με έμφαση στις αναλογίες, στη λεπτομέρεια και στην ιδέα ότι ένα κόσμημα πρέπει να παραμένει όμορφο μέσα στον χρόνο.
+          </p>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- CONTACT -->
+    <section class="section contact" id="contact">
+
+      <div class="container">
+
+        <div class="contact-box">
+
+          <p class="eyebrow"
+             data-el="Επικοινωνία"
+             data-en="Contact">
+            Επικοινωνία
+          </p>
+
+          <h2 data-el="Ας μιλήσουμε."
+              data-en="Let's talk.">
+            Ας μιλήσουμε.
+          </h2>
+
+          <p data-el="Για πληροφορίες σχετικά με τις συλλογές και τις συνεργασίες μας, επικοινωνήστε μαζί μας."
+             data-en="For information about our collections and collaborations, get in touch with us.">
+            Για πληροφορίες σχετικά με τις συλλογές και τις συνεργασίες μας, επικοινωνήστε μαζί μας.
+          </p>
+
+          <a href="mailto:info@athanasioujewelry.gr" class="contact-link">
+            info@athanasioujewelry.gr
+          </a>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+
+  <footer class="site-footer">
+
+    <div class="container footer-inner">
+
+      <div>
+        <strong>ATHANASIOU JEWELRY</strong>
+        <span>Athens · Greece</span>
+      </div>
+
+      <div class="footer-motto"
+           data-el="Τέχνη · Ισορροπία · Διαχρονικότητα"
+           data-en="Art · Balance · Timelessness">
+        Τέχνη · Ισορροπία · Διαχρονικότητα
+      </div>
+
+      <div class="copyright">
+        © 2026 Athanasiou Jewelry
+      </div>
+
     </div>
 
-    <div class="story-content">
-      <p class="eyebrow">OUR STORY</p>
+  </footer>
 
-      <h2>
-        Rooted in Greece.<br>
-        Designed for today.
-      </h2>
 
-      <p>
-        Athanasiou Jewelry brings together contemporary simplicity
-        and a subtle Greek aesthetic. Every piece is conceived around
-        proportion, texture and the beauty of restraint.
-      </p>
-    </div>
+  <script>
+    const toggle = document.getElementById("languageToggle");
+    let currentLanguage = "el";
 
-  </section>
+    toggle.addEventListener("click", () => {
+      currentLanguage = currentLanguage === "el" ? "en" : "el";
 
-  <section class="statement">
+      document.documentElement.lang = currentLanguage;
 
-    <div class="star">✦</div>
+      document.querySelectorAll("[data-el][data-en]").forEach(element => {
+        element.textContent = element.dataset[currentLanguage];
+      });
 
-    <h2>
-      LESS, BUT<br>
-      <em>MEMORABLE.</em>
-    </h2>
-
-  </section>
-
-  <section id="contact" class="contact">
-
-    <p class="eyebrow">CONTACT</p>
-
-    <h2>
-      Let's create something<br>
-      <em>lasting.</em>
-    </h2>
-
-    <p>
-      For collection enquiries and wholesale information:
-    </p>
-
-    <a href="mailto:info@athanasioujewelry.gr">
-      info@athanasioujewelry.gr
-    </a>
-
-  </section>
-
-</main>
-
-<footer>
-  <span>© 2026 ATHANASIOU JEWELRY</span>
-  <span>ATHENS · GREECE</span>
-</footer>
+      document.querySelector(".lang-el").classList.toggle("active", currentLanguage === "el");
+      document.querySelector(".lang-en").classList.toggle("active", currentLanguage === "en");
+    });
+  </script>
 
 </body>
 </html>
